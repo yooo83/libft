@@ -25,6 +25,4 @@ int	ft_atoi(const char *str)
 		num = num * 10 + (str[i] - 48);
 		i++;
 	}
-	return (num * negatif);
-
-}
+	return (num * negatif);}
