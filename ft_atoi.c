@@ -26,7 +26,7 @@ int	ft_atoi(const char *str)
 		i++;
 		if (num >= 9223372036854775807)
 		{
-			if(negatif == 1)
+			if (negatif == 1)
 				return (-1);
 			else
 				return (0);
