@@ -1,8 +1,10 @@
 #include "libft.h"
 
-int     ft_atoi(const char *str)
+int		ft_atoi(const char *str)
 {
-	size_t i, negatif, num;
+	size_t	i;
+	size_t num;
+	size_t negatif;
 
 	i = 0;
 	negatif = 1;
@@ -21,7 +23,7 @@ int     ft_atoi(const char *str)
 	{
 		num = num * 10 + (str[i] - 48);
 		i++;
-		if (num >= 9223372036854775807)
+		if(num >= 9223372036854775807)
 		{
 			if(negatif == 1)
 				return (-1);
