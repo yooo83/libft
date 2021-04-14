@@ -10,13 +10,11 @@ void    *ft_memmove(void *dest, const void *src, size_t n)
     dst = dest;
     source = src;
     if (dst < source)
-    {
         while(i < n)
         {
             dst[i] = source[i];
             i++;
         }
-    }
     else if (source < dst)
     {
         i = n;
