@@ -24,13 +24,6 @@ int	ft_atoi(const char *str)
 	{
 		num = num * 10 + (str[i] - 48);
 		i++;
-		if (num >= 9223372036854775807)
-		{
-			if (negatif == 1)
-				return (-1);
-			else
-				return (0);
-		}
 	}
 	return (num * negatif);
 }
